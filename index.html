@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Questions Form</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.cookie/1.1/jquery.cookie.js"></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <h1 id="question-prompt">Questions I've heard or have:</h1>
+    <input class="on-new-line" 
+          type="text" 
+          aria-labelledby="question-prompt" 
+          placeholder="One question I've heard or have" 
+          onkeyup="highlightDoneButton()" 
+          autofocus></input>
+    <button id="add" class="on-new-line" label="add new question">+</button>
+    <button id="done" class="on-new-line" label="done">Done</button>
+  </body>
+</html>

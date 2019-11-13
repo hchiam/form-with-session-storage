@@ -1,0 +1,71 @@
+* {
+  background: rgb(32,32,32);
+  color: whitesmoke;
+  font-family: avenir, arial;
+  padding: 10px;
+  margin: 10px;
+  transition: 0.5s;
+}
+
+*:not(h1) {
+  font-size: 16px;
+}
+
+body {
+  text-align: center;
+}
+
+button, input {
+  border-radius: 10px;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+}
+
+input {
+  width: 50vw;
+}
+
+button {
+  width: 37vw;
+}
+
+button:hover,
+input:hover,
+button:focus,
+input:focus {
+  color: black;
+  box-shadow: 0 0 0 2pt white;
+}
+
+button:hover,
+input:hover {
+  background: lightskyblue;
+}
+
+button:focus,
+input:focus {
+  background: rgb(64, 177, 247);
+}
+
+button:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+input:hover {
+  outline: 0;
+}
+
+.on-new-line {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input:before {
+  content: '<p>hi there</p>';
+  position: relative !important;
+  left: -100px;
+  z-index:100;
+}
