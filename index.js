@@ -44,7 +44,7 @@ const setUpAddQuestion = () => {
   });
 };
 
-let data = sessionStorage.getItem('data');
+let data = sessionStorage.getItem('data') || '';
 const setUpDone = () => {
   $('button#done').click(() => {
     $('input').each(function(index) {
